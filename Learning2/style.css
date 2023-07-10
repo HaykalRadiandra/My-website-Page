@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Pembatas */
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: #eaeaea;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+	margin-top: 1rem;
+	background-color: white;
+}
+
+header{
+	text-align: center;
+	padding-top: 10px;
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header ul li{
+    margin-top: 5px;
+    display: inline-block;
+	margin-bottom: 10px;
+}
+
+header ul li a{
+	font-size: 18px;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+header ul li a:hover{
+	background-color: lightblue;
+	color: rgb(172, 172, 172);
+}
+
+.banner{
+	height: 280px;
+	background-image: url(img/background.png);
+	background-size: cover;
+	background-position: 0 -100px;
+	border-top: 5px solid salmon;
+	border-bottom: 5px solid lightblue;
+}
+
+section{
+	padding: 20px;
+}
+
+section .judul{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+section .judul h3{
+	font-size: 32px;
+	font-weight: bold;
+}
+
+section .judul p{
+	margin-top: 5px;
+	font-size: 13px	;
+}
+
+section .judul p a {
+	text-decoration: none;
+	color: salmon;
+}
+
+section article{
+	text-align: justify;
+	font-size: 15px;
+}
+
+section article p{
+	margin: 5px;
+}
+
+footer{
+	padding: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgb(37, 37, 37);
+}
+
+
+
