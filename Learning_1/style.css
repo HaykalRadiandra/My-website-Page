@@ -50,9 +50,8 @@ body{
 }
 
 .container{
-    width: 800px;
+    width: 960px;
     margin: 0 auto;
-	margin-top: 1rem;
 	background-color: white;
 }
 
@@ -67,63 +66,96 @@ header h1{
 }
 
 header ul li{
-    margin-top: 5px;
+    margin-top: 8px;
     display: inline-block;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 header ul li a{
 	font-size: 18px;
 	text-decoration: none;
 	margin-right: 5px;
+	color: salmon;
+	padding: 4px;
 }
 
 header ul li a:hover{
 	background-color: lightblue;
-	color: rgb(172, 172, 172);
+	color: rgb(255, 255, 255);
 }
 
 .banner{
-	height: 280px;
+	height: 320px;
 	background-image: url(img/background.png);
 	background-size: cover;
-	background-position: 0 -100px;
+	background-position: 0 -140px;
 	border-top: 5px solid salmon;
 	border-bottom: 5px solid lightblue;
 }
 
-section{
+/* Main */
+
+.main{
 	padding: 20px;
+	width: 600px;
+	float: left;
 }
 
-section .judul{
+.main .judul{
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-section .judul h3{
+.main .judul h3{
 	font-size: 32px;
 	font-weight: bold;
 }
 
-section .judul p{
+.main .judul p{
 	margin-top: 5px;
 	font-size: 13px	;
 }
 
-section .judul p a {
+.main .judul p a {
 	text-decoration: none;
 	color: salmon;
 }
 
-section article{
+.main article{
 	text-align: justify;
 	font-size: 15px;
 }
 
-section article p{
-	margin: 5px;
+.main article p{
+	margin: 20px 0;
 }
+
+/* Sidebar */
+
+.sidebar{
+	width: 300px;
+	float: left;
+}
+
+.sidebar h3 {
+	margin: 15px 0;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.sidebar img{
+	float: left;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+
+.sidebar p{
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+}
+
+/* Footer */
 
 footer{
 	padding: 15px;
@@ -131,6 +163,19 @@ footer{
 	color: white;
 	background-color: rgb(37, 37, 37);
 }
+
+/* Clear Fic FLOAT */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
 
 
 
