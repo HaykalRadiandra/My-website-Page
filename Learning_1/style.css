@@ -47,12 +47,26 @@ table {
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	background-color: #eaeaea;
+	background-image: url(img/bg.webp);
 }
 
 .container{
     width: 960px;
-    margin: 0 auto;
+    margin: 80px auto;
 	background-color: white;
+	position: relative;
+}
+
+.container .ribbon{
+	text-indent: -9999px;
+	background-image: url(img/ribbon.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: -12px;
+	right: -11px;
 }
 
 header{
@@ -163,6 +177,8 @@ footer{
 	color: white;
 	background-color: rgb(37, 37, 37);
 }
+
+
 
 /* Clear Fic FLOAT */
 
