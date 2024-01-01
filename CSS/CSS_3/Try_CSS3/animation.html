@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+            animation-name: belajar;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+
+        @keyframes belajar {
+            0% {
+                width: 100px;
+                height: 100px;
+                margin-top: 2rem;
+            }
+
+            50% {
+                width: 400px;
+                height: 100px;
+                background-color: purple;
+                margin-top: 2rem;
+                margin-left: 10rem;
+            }
+
+            100% {
+                background-color: blueviolet;
+                height: 500px;
+                width: 400px;
+                margin-top: 2rem;
+                margin-left: 10rem;
+            }
+        }
+
+    </style>
+    <title>Animation</title>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>

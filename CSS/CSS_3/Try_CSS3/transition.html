@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto 0;
+            border: 1px solid black;
+        }
+        
+        .kotak{
+            text-align: center;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            margin: .5rem;
+        }
+        
+        .container:hover .kotak{
+            margin-left: 690px;
+            transform: rotate(720deg);
+            background-color: rebeccapurple;
+        }
+
+        .kotak1 { transition: margin-left 3s,transform 3s 2s, background-color 2s 3s;}
+        .kotak2 { transition: 2s ease-in;}
+        .kotak3 { transition: 2s ease-in-out;}
+        .kotak4 { transition: 2s ease-out;}
+        .kotak5 { transition: 2s linear;}
+        .kotak6 { transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);}
+        .kotak7 { transition: 2s cubic-bezier(0.1,-0.54, 0.82, 1.38);}
+        .kotak8 { transition: 2s steps(10, start);}
+        .kotak9 { transition: 2s steps(10, end);}
+
+        /* Keyword values
+        transition-timing-function: ease;
+        transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
+        transition-timing-function: ease-in-out;
+        transition-timing-function: linear;
+        transition-timing-function: step-start;
+        transition-timing-function: step-end;
+
+        # Function values
+        transition-timing-function: steps(4, jump-end);
+        transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+
+        # Steps Function keywords
+        transition-timing-function: steps(4, jump-start);
+        transition-timing-function: steps(10, jump-end);
+        transition-timing-function: steps(20, jump-none);
+        transition-timing-function: steps(5, jump-both);
+        transition-timing-function: steps(6, start);
+        transition-timing-function: steps(8, end);
+
+        # Multiple easing functions
+        transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+
+        # Global values
+        transition-timing-function: inherit;
+        transition-timing-function: initial;
+        transition-timing-function: revert;
+        transition-timing-function: revert-layer;
+        transition-timing-function: unset; */
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="kotak kotak1">1</div>
+        <div class="kotak kotak2">2</div>
+        <div class="kotak kotak3">3</div>
+        <div class="kotak kotak4">4</div>
+        <div class="kotak kotak5">5</div>
+        <div class="kotak kotak6">6</div>
+        <div class="kotak kotak7">7</div>
+        <div class="kotak kotak8">8</div>
+        <div class="kotak kotak9">9</div>
+    </div>
+
+</body>
+</html>
