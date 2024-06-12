@@ -1,0 +1,157 @@
+/* ===================== Google Font Import - Poppins ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+}
+.slide-container {
+    width: 100%;
+    padding: 40px 30px !important;
+    max-width: 1520px;
+}
+
+.slide-container .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.slide-container .card {
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.slide-container .image-content,
+.slide-container .card-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 14px;
+}
+
+.slide-container .image-content {
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+
+.slide-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 25px;
+}
+
+.slide-container .overlay::before,
+.slide-container .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+}
+
+.slide-container .overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+
+.slide-container .card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.slide-container .card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+
+.slide-container .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.slide-container .description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.slide-container .button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    transition: all 0.3s ease;
+}
+
+.slide-container .button:hover {
+    background: #204eca;
+}
+
+.slide-container .swiper-navBtn {
+    color: #6e93f7;
+    transition: color 0.3s;
+}
+
+.slide-container .swiper-navBtn:hover {
+    color: #4070f4;
+}
+
+.slide-container .swiper-navBtn::before,
+.slide-container .swiper-navBtn::after {
+    font-size: 40px;
+}
+
+.slide-container .swiper-button-next {
+    right: 0;
+}
+
+.slide-container .swiper-button-prev {
+    left: 0;
+}
+
+.slide-container .swiper-pagination.bullets {
+    background-color: #6e93f7;
+    opacity: 1;
+}
+
+.slide-container .swiper-pagination.bullet-active {
+    background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+    .swiper-navBtn {
+        display: none !important;
+    }
+}
